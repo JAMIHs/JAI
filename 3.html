@@ -12,6 +12,9 @@
   a{
     text-decoration-line : none;
   }
+  .ma{
+      margin: 5px;
+    }
   #container{
       display: grid;
       grid-template-columns: 5.5fr 1fr;
@@ -31,7 +34,7 @@
       body{
         font-family: 'Nanum Myeongjo', serif;
       }
-     .em{
+    /* .em{
               color:green;
           }
           li{
@@ -40,12 +43,14 @@
           }
           .ma{
       margin: 5px;
-    }
+    }*/
         
   </style>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+  <input type="button" value="Night mode" onclick="document.querySelector('body').style.color = 'white',document.querySelector('body').style.backgroundColor = 'black';">
+<input type="button" value="Day mode" onclick="document.querySelector('body').style.color = 'black',document.querySelector('body').style.backgroundColor = 'white';">
 </head>
 <body>
   <h1 class="em">MY FIRST <a href="index.html">WEB</a></h1>
