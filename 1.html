@@ -10,21 +10,21 @@
 
 </head>
   <body>
-    <input type="button" id="dnbtn" value="night" onclick="
-    let button = document.querySelector('#dnbtn');
+    <input type="button" value="night" onclick="
+    let button = this;
     if(button.value === 'night'){
-      document.querySelector('h1').style.color = 'white';
-      document.querySelector('.ma').style.color = 'white';
-      document.querySelector('.con').style.color = 'white';
-      document.querySelector('body').style.backgroundColor = 'black';
-        button.value = 'day';
-    } else {
-      document.querySelector('h1').style.color = 'green';
-      document.querySelector('.ma').style.color = 'red';
-      document.querySelector('.con').style.color = 'black';
-      document.querySelector('body').style.backgroundColor = 'white';
-        button.value = 'night';
-    }
+          document.querySelector('h1').style.color = '#E5E5E5';
+          document.querySelector('.ma').style.color = '#E5E5E5';
+          document.querySelector('.con').style.color = '#E5E5E5';
+          document.querySelector('body').style.backgroundColor = 'black';
+            button.value = 'day';
+        } else {
+          document.querySelector('h1').style.color = 'green';
+          document.querySelector('.ma').style.color = 'red';
+          document.querySelector('.con').style.color = 'black';
+          document.querySelector('body').style.backgroundColor = 'white';
+            button.value = 'night';
+        }
 ">
     <h1 class="em">MY FIRST <a href="index.html">WEB</a></h1>
     <b>
