@@ -3,63 +3,35 @@
   <head>
     <title>호에엥</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
   <style>
-         h1{
-      border-bottom:1px solid;
-      padding:10px;
-          margin: 10px;
-    }
-  a{
-    text-decoration-line : none;
-  }
-  #s{
+    #s{
   margin: 0px;
-  padding: 5px;
+  padding: 0px;
 }
-h2{
-  margin : 0px;
-}
-.ma{
-      margin: 5px;
-    }
-#container{
-      display: grid;
-      grid-template-columns: 5.5fr 1fr;
-      margin: 20px;
-    }
-  @media all and (min-width: 480px){ 
-          body{
-            background-color:rgba(255, 255, 255, 0.329);
-          }
-      }
-      
-      @media all and (max-width: 480px) {
-          body{
-              background-color:rgb(238, 138, 138);
-          }
-      }
-      body{
-        font-family: 'Nanum Myeongjo', serif;
-      }
-   /*  .em{
-              color:green;
-          }
-          li{
-              color:red;
-            
-          }
-          .ma{
-      margin: 5px;
-    }*/
-        
   </style>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
-  <input type="button" value="Night mode" onclick="document.querySelector('body').style.color = 'white',document.querySelector('body').style.backgroundColor = 'black';">
-<input type="button" value="Day mode" onclick="document.querySelector('body').style.color = 'black',document.querySelector('body').style.backgroundColor = 'white';">
+
 </head>
 <body>
+  <input type="button" id="dnbtn" value="night" onclick="
+  let button = document.querySelector('#dnbtn');
+  if(button.value === 'night'){
+    document.querySelector('h1').style.color = 'white';
+    document.querySelector('.ma').style.color = 'white';
+    document.querySelector('.con').style.color = 'white';
+    document.querySelector('body').style.backgroundColor = 'black';
+      button.value = 'day';
+  } else {
+    document.querySelector('h1').style.color = 'green';
+    document.querySelector('.ma').style.color = 'red';
+    document.querySelector('.con').style.color = 'black';
+    document.querySelector('body').style.backgroundColor = 'white';
+      button.value = 'night';
+  }
+">
   <h1 class="em">MY FIRST <a href="index.html">WEB</a></h1>
   <b>
   <div id="container">
@@ -69,7 +41,7 @@ h2{
     <li><a href="3.html">JavaScript</a></li>
     </ol>
     <div>
-      <div>
+      <div class ="con">
   <h2>css</h2>
   <ol id="s"> 
     <li><a href="css/box.html">box</a></li>
