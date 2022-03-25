@@ -9,22 +9,36 @@
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
 </head>
 <body>
-  <input type="button" value="night" onclick="
-        let button = this;
-        if(button.value === 'night'){
+  <script>
+    function night()
+    {
+
           document.querySelector('h1').style.color = '#E5E5E5';
           document.querySelector('.ma').style.color = '#E5E5E5';
           document.querySelector('.con').style.color = '#E5E5E5';
+          document.querySelector('body').style.color = '#E5E5E5';
           document.querySelector('body').style.backgroundColor = 'black';
-            button.value = 'day';
-        } else {
-          document.querySelector('h1').style.color = 'green';
+    }
+    function day()
+    {
+      document.querySelector('h1').style.color = 'green';
           document.querySelector('.ma').style.color = 'red';
           document.querySelector('.con').style.color = 'black';
+          document.querySelector('body').style.color = 'black';
           document.querySelector('body').style.backgroundColor = 'white';
-            button.value = 'night';
-        }
-    ">
+    }
+  </script>
+
+  <input type="button" value="night" onclick="
+        if(this.value === 'night')
+        {
+        night();
+        this.value = 'day';
+        } else {
+        day();
+        this.value = 'night';
+        }">
+
   <h1 class="em">MY FIRST <a href="index.html">WEB</a></h1>
   <b>
   <div id="container">
