@@ -7,12 +7,13 @@
         return l+r
     }
     function min(l,r){
-    return l-r
+        return l-r
     }
     function mul(l,r){
-    return l*r}
+        return l*r
+    }
     function div(l,r){
-    return l/r
+        return l/r
     }
 </script>
 <input type="button" value="계산기" onclick="
@@ -21,16 +22,18 @@
     let 숫자2 = Number(prompt('두번째 숫자? '));
     if (기호 === '+'){
         alert(sum(숫자1,숫자2));
-    }else if(기호 ==='-'){
+    }
+    else if(기호 === '-'){
         alert(min(숫자1,숫자2));
     }
-else if(기호 ==='/'){
-    alert(div(숫자1,숫자2));
-}
-else if(기호 ==='*'){
-    alert(mul(숫자1,숫자2));
-}else
-    alert('잘못입력하셨습니다');
+    else if(기호 === '/'){
+        alert(div(숫자1,숫자2));
+    }
+    else if(기호 === '*'){
+        alert(mul(숫자1,숫자2));
+    }
+    else
+        alert('잘못입력하셨습니다');
 ">
     </body>
 </html>
