@@ -10,6 +10,7 @@
 *{box-sizing: border-box;
 	list-style: none;
 text-decoration: none;}
+
 body{font-family: 'NanumSquareRound'; position: relative; font-weight: 500;
 		margin: 0;
 		padding: 0;
@@ -34,24 +35,20 @@ button.move i{padding: 5px; font-size: 32px;}
 .header .bannerText p:first-child{font-size: 50px; font-weight: 600; padding-bottom: 35px; line-height: 60px;}
 .header .bannerText p:last-child {font-weight: 500; line-height: 20px;}
 .header .bannerText p:last-child span:nth-child(3){display: block;}
-/* .header .bannerImg{position: absolute; bottom: -6%; right: 13%;} */
 .wrapper{max-width:100%; position: relative;}
 .wrapper .top_wrap > a , .wrapper #gnb_m > a{position: absolute; height: 71px;}
 .wrapper .top_wrap > a img{left: 170px; position: absolute; padding: 14px; height: 44px;}
 .wrapper .top_wrap > a .header_logo{width: 71px;}
 .wrapper .top_wrap > a .header_logo_text{width: 150px; margin-left: 15px;}
 .wrapper .top_wrap{max-width:1400px; margin:0 auto; position: relative;z-index: -1;height: 100%;}
-.wrapper .top_wrap .img-wrap{display: block; height: auto; position: absolute; top: 25%}
+.wrapper .top_wrap .img-wrap{display: block; height: auto; position: absolute; top: 25%; padding-left: 15px;}
 .wrapper .top_wrap .img-wrap img{width: 240px;}
 
 .back.flip-item {
 	text-align: center;
 	line-height: 30px;
-	/* 이미지 위에 글자 */
 	width: 100%;
-	/* margin: 10px auto; */
 	position: relative;
-
  }
 
  .app-text {
@@ -64,7 +61,6 @@ button.move i{padding: 5px; font-size: 32px;}
 	font-family: 'ypseo';
 	text-align: center;
 	color: #ffffff;
-	/* font-weight: 600; */
  }
 
  .layoutImg {
@@ -78,62 +74,10 @@ button.move i{padding: 5px; font-size: 32px;}
 
 
 .b_wrap .busi_content_wrap .business_list .flip:first-child img{width: 170px;}
-.more_btn {
-	position: relative;
-	overflow: hidden;
-	display: inline-block;
-	width: 140px;
-	height: 40px;
-	font-size: 15px;
-	text-align: center;
-	border: 1px solid var(var(--pink-color));
-	background: transparent; 
-	/* border-radius: 46px;
-	-moz-border-radius: 46px;
-	-webkit-border-radius: 46px;
-	-o-border-radius: 46px; */
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	-ms-transition: all 0.3s;
-	transition: all 0.3s;
-	font-family: 'Montserrat', 'Noto Sans KR';
-	font-weight: 600;
-	cursor: pointer;
-}
-.more_btn span{position:relative; z-index:1; color:#2e2e2e;}
-.more_btn:before{
-    display: block;
-	position: absolute;
-	top: 0px;
-	left: -130%;
-	content: "";
-	width: 130%;
-	height: 100%;
-	border-radius: 0 42px 42px 0;
-	opacity: 0;
-	filter: Alpha(opacity = 0);
-	background: var(--pink-color);
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	-ms-transition: all 0.3s;
-	transition: all 0.3s}
-
-.b_wrap .business_list li:hover .more_btn span{color:#fff;}
-.b_wrap .business_list li:hover .more_btn:before{left:0px; opacity:1.0;filter:Alpha(opacity=100);}
-.b_wrap .business_list li:hover .more_btn:after{opacity:0;filter:Alpha(opacity=0); visibility:hidden;}
-
-.b_wrap{padding: 100px 0;}
-.tit_center {text-align: center; float: none;}
-.title .h_tit {font-size: 42px; font-weight: 600; color: navy;}
-
 
 .b_wrap{padding: 200px 0; overflow: hidden;}
 .b_wrap .busi_content_wrap {max-width: 1400px; margin: 0 auto;}
 .b_wrap .business_list {width: 100%; display: flex;}
-/* .b_wrap .business_list li {box-sizing: border-box; cursor: pointer; background: #f6f6f6; padding: 40px 25px; margin: 0 1.5%; width: calc(100% / 4 - 3%); height: 100%;} */
-/* .b_wrap .business_list li:hover {box-shadow: 0 0 20px 5px rgba(0,0,0,0.08);} */
 .b_wrap .business_list li a {display: block; position: relative; text-align: center; height: 100%; transition: box-shadow .2s;}
 .b_wrap .business_list li a .title {font-size: 23px; margin: 10px 0; font-weight: 500; color: #2e2e2e;}
 .subTitleEng {text-transform: uppercase; text-align: center; color: #ee72d8; font-weight: 600; font-size: 15px; letter-spacing: 3px;}
@@ -141,8 +85,6 @@ button.move i{padding: 5px; font-size: 32px;}
 .b_wrap .business_list li a .img_wrap img{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100px;}
 .b_wrap .busi_content_wrap .business_list .flip:first-child img{width: 140px;}
 
-/* .b_wrap .busi_content_wrap li:first-of-type img:first-child {left: 30%;}
-.b_wrap .busi_content_wrap li:first-of-type img:nth-child(2) {left: 70%;} */
 .b_wrap .business_list .flip{box-sizing: border-box; cursor: pointer; width: calc(100% / 4 - 3%); height: 350px; position: relative; margin: 0 1.5%;}
 .b_wrap .business_list .flip .flip-item{backface-visibility: hidden; background: #f6f6f6; transition: 1s; width: 100%; height: 100%;}
 .b_wrap .business_list .flip .front{position: absolute; backface-visibility: hidden; transition: 1s; transform: rotateY(0deg);}
@@ -150,7 +92,6 @@ button.move i{padding: 5px; font-size: 32px;}
 .b_wrap .business_list .flip .back {transform: rotateY(-180deg);display: flex; align-items: center; justify-content: space-between;flex-direction: column; }
 .b_wrap .business_list .flip:hover .front{transform: rotateY(180deg);}
 .b_wrap .business_list .flip:hover .back{transform: rotateY(0deg); }
-
 
 
 
@@ -381,6 +322,9 @@ footer{
 
 /*동적 화면 크기 조절*/
 @media screen and (max-width:1500px) {
+	.header .bannerText-wrap{ padding-left: 2%;}
+	.header .banner-wrap .img-wrap{padding-right: 2%;}
+	/* 명환씨파트 */
 	.cus_wrap{height: 60vw;}
 	.cus_wrap .ecoce-bot {top: 5%; width: 53%; right: 2%;}
 	.cus_wrap .ministry-Environ-img{top: 30%; width: 25%; right: 2%;}
@@ -461,11 +405,18 @@ footer{
 	}
 }	
 
+
 @media screen and (max-width: 940px){
 	/* 인홍씨파트 */
+	.header{height: 1000px; background: url(./resoft_image/헤더배경940.png) no-repeat; background-position-x: right;}
+	.header .bannerText{padding-bottom: 50px;}
+	.header .bannerText p:first-child{font-size: 36px; line-height: 45px;}
+	.header .bannerText-wrap{top: 45%;}
+	.header .banner-wrap .img-wrap{left: 50%; right: 0; top: 0; transform: translateX(-50%); width: 500px;}
+	.header .banner-wrap .img-wrap img{width: 100%;}
 	.wrapper .top_wrap{display: inline;}
-	.wrapper .top_wrap>a img{position: unset;}	
-	 
+	.wrapper .top_wrap>a img{ position: unset;}
+	.wrapper .top_wrap .img-wrap img {height: 30px; width: 150px;}
 	/* 순정씨 파트 */
     /*프로젝트 타이틀 */
     .proj-center h1 {
@@ -518,7 +469,6 @@ footer{
 	.main{width: 100%; margin: 0px auto 0;}
 	.b_wrap{max-width: 100%; margin: 0 auto; height: auto; padding: 40px 0;}
 	.b_wrap .busi_content_wrap {padding: 60px 20px;}
-	
 	.news_wrap {padding: 100px 20px 40px 20px; box-sizing: border-box; height: auto;}
 	.new_body .cate {font-size: 14px;}
 	.new_body .news_tit {font-size: 16px;}
@@ -526,13 +476,10 @@ footer{
 
 @media screen and (max-width: 640px){
 	/* 인홍씨파트 */
-	.header{height: 640px;}
-	.header .bannerText p:first-child{font-size: 24px; line-height: 30px; padding-bottom: 22px;}
-	.header .bannerText p:last-child{line-height: 17px; font-size: 15px;}
-	.header .bannerText{padding-bottom: 25px;}
-	.header .bannerText-wrap button{padding: 8px 20px; font-size: 15px;}
-	.header .banner-wrap .img-wrap{width: 300px;}
-    body {max-width: 640px; overflow-x: hidden;}
+	.header .banner-wrap .img-wrap{width: 400px;}
+	.header{height: 800px;}
+	.header .bannerText{padding-left: 50px;}
+
    
 	/* 주형씨파트 */
 	.b_wrap .business_list .flip{height: 300px;}
@@ -613,8 +560,12 @@ footer{
 
 @media screen and (max-width: 430px){
 	/* 인홍씨파트 */
-	body {max-width: 250;
-		overflow-x: hidden;}
+	.header{height: 640px;}
+	.header .bannerText p:first-child{font-size: 24px; line-height: 30px; padding-bottom: 22px;}
+	.header .bannerText p:last-child{line-height: 17px; font-size: 15px;}
+	.header .bannerText{padding-bottom: 25px;}
+	.header .bannerText-wrap button{padding: 8px 20px; font-size: 15px;}
+	.header .banner-wrap .img-wrap{width: 300px;}
 	
 	/* 순정씨파트 */
 	.proj-center h4 {
