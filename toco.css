@@ -165,7 +165,7 @@ button.move i{padding: 5px; font-size: 32px;}
 
 /*구 모양 이미지? 왜 있을까요??*/
 .cus_wrap {
-	background: url(./resoft-image/web.pngk) no-repeat; 
+/* 	background: url(./resoft-image/web.png) no-repeat;  */
 	max-width: 1400px; 
 	height: 1100px; 
 	margin: 0 auto; 
