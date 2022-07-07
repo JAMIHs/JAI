@@ -9,7 +9,12 @@
 
 *{box-sizing: border-box;
 	list-style: none;
-text-decoration: none;}
+text-decoration: none;
+}
+
+ul {
+	padding: 0;
+}
 
 body{font-family: 'NanumSquareRound'; position: relative; font-weight: 500;
 		margin: 0;
@@ -32,7 +37,7 @@ button.move i{padding: 5px; font-size: 32px;}
 .header .bannerText-wrap button{color: #f8f8f8; font-weight: 600; font-size: 20px; padding: 10px 25px; background: #ffffff2b; cursor: pointer; border: 1px solid;}
 .header .bannerText-wrap button:hover{background: transparent}
 .header .bannerText{padding-bottom: 80px;}
-.header .bannerText p:first-child{font-size: 50px; font-weight: 600; padding-bottom: 35px; line-height: 60px;}
+.header .bannerText p:first-child{font-size: 50px; font-weight: 600; line-height: 60px;}
 .header .bannerText p:last-child {font-weight: 500; line-height: 20px;}
 .header .bannerText p:last-child span:nth-child(3){display: block;}
 .wrapper{max-width:100%; position: relative;}
@@ -283,14 +288,14 @@ footer{
 }
 .footer_wrap{				
 	margin:0 auto;
-	padding:80px 50px;
+	padding:80px 40px;
 	display:flex;
 }			
 .footer_wrap > div{
 	margin-left:250px;
 }
 .footer_wrap .footer_content{
-	margin-left:5%;
+	margin-left:3%;
 	width:85%;
 	display:inline-block;
 }
@@ -364,7 +369,7 @@ footer{
 	/* 인홍씨파트 */
 	.header .bannerText p:first-child{font-size: 45px;}
 	.header .banner-wrap .img-wrap{top: 11%;}
-	.header .banner-wrap .img-wrap img{width: 580px;}
+	.header .banner-wrap .img-wrap img{padding-top: 80px;}
 	.header .bannerText p:last-child span:last-child{display: block;}
 	.header .bannerText p:last-child span:nth-child(2),
 	.header .bannerText p:last-child span:last-child span:last-child {display: block;}
@@ -410,7 +415,7 @@ footer{
 	/* 인홍씨파트 */
 	.header{height: 1000px; background: url(./resoft_image/헤더배경940.png) no-repeat; background-position-x: right;}
 	.header .bannerText{padding-bottom: 50px;}
-	.header .bannerText p:first-child{font-size: 36px; line-height: 45px;}
+	.header .bannerText p:first-child{font-size: 36px; line-height: 45px; padding-top: 60px;}
 	.header .bannerText-wrap{top: 45%;}
 	.header .banner-wrap .img-wrap{left: 50%; right: 0; top: 0; transform: translateX(-50%); width: 500px;}
 	.header .banner-wrap .img-wrap img{width: 100%;}
@@ -476,7 +481,6 @@ footer{
 @media screen and (max-width: 767px){
 	/* 사업영역 */
 	.main{width: 100%; margin: 0px auto 0;}
-	.b_wrap{max-width: 100%; margin: 0 auto; height: auto; padding: 40px 0;}
 	.b_wrap{max-width: 100%; margin: 0 auto; height: auto; padding: 40px 0;}
 	.b_wrap .busi_content_wrap {padding: 60px 20px;}
 	.news_wrap {padding: 100px 20px 40px 20px; box-sizing: border-box; height: auto;}
