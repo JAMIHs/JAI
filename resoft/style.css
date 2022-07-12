@@ -19,13 +19,13 @@ br{opacity: 0;}
 
 .topBtn{position: fixed; z-index: 99999; bottom: 7%; right: 5%; display: flex; flex-direction: column; align-items: center;}
 .topBtn p{font-weight: 500; font-size: 16px; color: #a3a3a3;}
-button.move{border-radius: 50%; border: 2px solid #a3a3a3; background: white; cursor: pointer; margin-bottom: 5px;}
+button.move{border-radius: 50%; border: 2px solid #dddddd; background: white; cursor: pointer; margin-bottom: 5px;}
 button.move i{padding: 5px; font-size: 32px;}
 
-.header{width: 100%; height: 830px; z-index: 9999; position: relative; background: url(./toco_image/header_bg.png) no-repeat; background-repeat: round; padding-top: 1.5%;} /*헤더 배경 */
-.header .banner-wrap{height: 100%; max-width: 1400px; margin: 0 auto; position: relative; margin-top: 4.3%;}
+.header{width: 100%; height: 830px; z-index: 9999; position: relative; background: url(./toco_image/header_bg.png) no-repeat; background-repeat: round; padding-top: 1.3%;} /*헤더 배경 */
+.header .banner-wrap{height: 100%; max-width: 1400px; margin: 0 auto; position: relative; margin-top: 3.6%;}
 .header .banner-wrap .img-wrap{position: absolute; right: 0; top: 10%;}
-.header .bannerText-wrap{color: #f8f8f8; position: absolute; top: 25%; word-break: normal;}
+.header .bannerText-wrap{color: #dddddd; position: absolute; top: 27%; word-break: normal;}
 .header .bannerText-wrap button{color: #f8f8f8; font-weight: 600; font-size: 20px; padding: 10px 25px; background: #ffffff2b; cursor: pointer; border: 1px solid; }
 .header .bannerText-wrap button:hover{background: transparent}
 .header .bannerText{padding-bottom: 80px;}
