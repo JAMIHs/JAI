@@ -433,7 +433,7 @@ footer{
 	.header .banner-wrap .img-wrap img{width: 100%;}
 	.wrapper .top_wrap{display: inline;}
 	.wrapper .top_wrap>a img{ position: unset;}
-	.wrapper .top_wrap .img-wrap img {height: 30px; width: 150px; padding-left: 10px;}
+	.wrapper .top_wrap .img-wrap img {height: 30px; width: 150px; }
 
 
 	.b_wrap .business_list .flip{height: 300px;}
@@ -470,7 +470,7 @@ footer{
 	.cus_wrap .eco-clean-earth{margin: 0; position: unset;}
 
 	/* 유진씨파트 */
-    .box_wrap{height: 400px; text-align: center;}
+    .box_wrap{height: 50%; text-align: center;}
 	.box_wrap img{width: 60%; position:unset; margin: 70px 0;}
 	.box_wrap .box_btn{position: unset; flex-direction: column; align-items: center;}
     .box_wrap .box_btn button{width: 60%;}
@@ -502,8 +502,7 @@ footer{
 	/* 인홍씨파트 */
 	.header .banner-wrap .img-wrap{width: 400px;}
 	.header{height: 800px;}
-
-
+	
    
 	/* 주형씨파트 */
 	.b_wrap .business_list .flip{height: 250px;}
@@ -541,6 +540,8 @@ footer{
 		margin:0;
 		gap:0;
 		width:90%;
+		margin-bottom: 50px;
+		height: 230px;
 	}
 	.map-wrap .map-info-wrap .map-info{
 		width: calc(100% / 2);
