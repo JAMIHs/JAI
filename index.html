@@ -1,330 +1,107 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="animate.css">
-    <link rel="stylesheet" href="magic.css">
-    <script src="https://code.jquery.com/jquery-latest.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">    
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <title>introduce</title>
-    <script>
-     $(document).ready(function() {
-    new WOW().init()
-    });
-        </script>
-    <script src="wow.min.js"></script>
-    <script>    
-    window.onload = function(){
-        setTimeout(function(){
-            scrollTo(0,0);
-        },100);
-    }</script>
-    <style>
-        *{scroll-behavior:smooth;}
-
-        #load{width:100%;height:100%;top:0;left:0;position:fixed;display:block;opacity:1;background:#fff;z-index:299;}
-
-        .menu{
-            position: fixed;
-            right: -50px;
-            top: 45%;
-            background: #737373;
-            height: 100px;
-            width: 100px;
-            border-radius: 50px;
-            cursor: pointer;
-            z-index: 10;
-        }
-
-        .menu ul{
-            height: 100px;
-            width: 20%;
-        }
-
-        .menu ul li {
-            width: 100%;
-            right: 220px;
-            top: -170px;
-            position: relative;
-        }
-        .menu ul li a {
-            position: relative;
-            line-height: 3;
-            color: #111;
-            font-size: 30px;
-            font-family: 'Bebas Neue', cursive;
-        }
-
-        .menu ul li a:hover {
-            color:white;
-        }
-
-        .menu_background{
-            width: 100%;
-            height: 100%;
-            background: rgba(115, 115, 115,0.5);
-            position: fixed;
-            backdrop-filter: blur(5px);
-            z-index: 10;
-        }
-
-        #start{
-            width: 100%;
-            height: 50vw;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #f9f9f9;
-            font-family: 'Silkscreen', cursive;
-            line-height: 1.5;
-        }
-
-        .show{opacity: 1;}
-        .close{opacity: 0;}
-        .close2{display:none;}
-
-        #start p{
-            text-align: center;
-            font-size: 90px;
-            margin: 0 auto;
-        }
-
-        #start button{
-            position: absolute;
-            width: 300px;
-            height: 100px;
-            font-size: 50px;
-        }
-        #start .title2{
-            position: absolute;
-        }
-        section{
-            max-width: 1440px;
-            margin: 0 auto;
-        }
-
-        #resume{
-            padding: 100px 0;
-        }
-
-        #section2{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            align-content: center;
-            height: 1000px;
-            font-family: 'Noto Sans KR', sans-serif;
-        }
-        .section2_1{
-            display: inline-flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            justify-content: space-evenly;
-            align-items: flex-start;
-            align-content: center;
-            width: 20%;
-            border-right: rgba(115, 115, 115, .2) 5px dashed;   
-            font-size: 30px;
-            color: #737373;
-            margin-left: 20px;
-            padding-right: 20px;
-        }
-
-        .section2_1 h2{
-            height: 150px;
-            line-height: 1.5;
-        }
-
-        .section2_2{
-            display: inline-flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            justify-content: space-evenly;
-            align-items: center;
-            align-content: center;
-            width: 80%;
-            padding-left: 50px;
-            font-size: 20px;
-            margin-right: 20px;
-        }
-
-        .section2_2 p{
-            line-height: 1.5;
-        }
-
-        .gray{
-            background: #f9f9f9;
-        }
-
-        section img{
-            display: flex;
-            margin: 0 auto;
-            text-align: center;
-            width: 100%;
-        }
-        a, a:visited {
-            text-decoration: none;
-            color: #00AE68;
-        }
-        .btnBlueGreen {
-            background: #BBBBBB;
-        }
-    
-        a.button {
-            display: block;
-            position: absolute;
-            float: left;
-            width: 120px;
-            padding: 0;
-            margin: 10px 20px 10px 0;
-            font-weight: 600;
-            text-align: center;
-            line-height: 50px;
-            color: #FFF;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .btnBlueGreen.btnPush {
-            box-shadow: 0px 5px 0px 0px #111;
-            transition: 0.2s ;
-        }
-        .btnPush:hover {
-            margin-top: 15px;
-            margin-bottom: 5px;
-        }
-
-        .btnBlueGreen.btnPush:hover {
-            transition: 0.2s ;
-            box-shadow: 0px 0px 0px 0px #007144;
-        }
-
-         #portfolio{
-            height: 1000px;
-        }
-
-        #bottom{
-            height: 1000px;
-        } 
-    </style>
+<title>호에엥</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JQB8V3LTFR"></script>
+<script>//구글 사람수
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-JQB8V3LTFR');
+</script>
 </head>
-
 <body>
-    <div id="load"></div>
-    <div class="menu_background close2"></div>
-    <div class="menu">
-        <ul class="inside close2">
-            <li><a href="#start"> top</a></li>
-            <li><a href="#resume"> resume</a></li>
-            <li><a href="#section2"> introduce</a></li>
-            <li><a href="#portfolio"> portfolio</a></li>
-            <li><a href="#bottom"> bottom</a></li>
-        </ul>
-    </div>
+<script>
+function night()
+{
 
-    <div id="start">
-        <p class="hello wow fadeInDown close" data-wow-delay="1s">Hello World!</p>
-        <p class="let title2 wow fadeInDown close" data-wow-delay="3s">Let me <br> introduce myself...</p>
-        <a class="button btnPush btnBlueGreen start-button wow fadeInDown" data-wow-delay="5s">start</a>
-    </div>
-    <section id="resume">
-        <img class="wow fadeIn" data-wow-delay="0.4s" src="introduce1.png" alt="이력서 이미지">
-        <img class="wow fadeIn" data-wow-delay="0.6s" src="introduce2.png" alt="이력서 이미지">
-        <img class="wow fadeIn" data-wow-delay="0.4s" src="introduce3.png" alt="이력서 이미지">
-        <img class="wow fadeIn" data-wow-delay="0.6s" src="introduce4.png" alt="이력서 이미지">
+      document.querySelector('h1').style.color = '#E5E5E5';
+      document.querySelector('.ma').style.color = '#E5E5E5';
+      document.querySelector('.con').style.color = '#E5E5E5';
+      document.querySelector('body').style.color = '#E5E5E5';
+      document.querySelector('body').style.backgroundColor = 'black';
+}
+function day()
+{
+  document.querySelector('h1').style.color = 'green';
+      document.querySelector('.ma').style.color = 'red';
+      document.querySelector('.con').style.color = 'black';
+      document.querySelector('body').style.color = 'black';
+      document.querySelector('body').style.backgroundColor = 'white';
+}
+</script>
 
-    </section>
-    <div class="gray">
-    <section id="section2">
-        <div class="section2_1 wow fadeInLeft"  data-wow-delay="0.6s">
-        <h2> 지원동기</h2>
-        <h2> 성격 및 가치관</h2>
-        <h2> 입사 후 포부</h2>
-        </div>
-        <div class="section2_2 wow fadeInRight"  data-wow-delay="0.6s">
-        <p>모든 국민은 통신의 비밀을 침해받지 아니한다. 모든 국민은 고문을 받지 아니하며, 형사상 자기에게 불리한 진술을 강요당하지 아니한다. 외국인은 국제법과 조약이 정하는 바에 의하여 그 지위가 보장된다.
+<input type="button" value="night" onclick="
+    if(this.value === 'night')
+    {
+    night();
+    this.value = 'day';
+    } else {
+    day();
+    this.value = 'night';
+    }">
 
-            대통령후보자가 1인일 때에는 그 득표수가 선거권자 총수의 3분의 1 이상이 아니면 대통령으로 당선될 수 없다. 사법권은 법관으로 구성된 법원에 속한다.
-            
-            대통령은 조국의 평화적 통일을 위한 성실한 의무를 진다. 모든 국민은 건강하고 쾌적한 환경에서 생활할 권리를 가지며, 국가와 국민은 환경보전을 위하여 노력하여야 한다.</p>
-        <p>모든 국민은 통신의 비밀을 침해받지 아니한다. 모든 국민은 고문을 받지 아니하며, 형사상 자기에게 불리한 진술을 강요당하지 아니한다. 외국인은 국제법과 조약이 정하는 바에 의하여 그 지위가 보장된다.
+<h1>MY FIRST <a href="index.html">WEB</a></h1>
 
-            대통령후보자가 1인일 때에는 그 득표수가 선거권자 총수의 3분의 1 이상이 아니면 대통령으로 당선될 수 없다. 사법권은 법관으로 구성된 법원에 속한다.
-            
-            대통령은 조국의 평화적 통일을 위한 성실한 의무를 진다. 모든 국민은 건강하고 쾌적한 환경에서 생활할 권리를 가지며, 국가와 국민은 환경보전을 위하여 노력하여야 한다.</p>
-        <p>모든 국민은 통신의 비밀을 침해받지 아니한다. 모든 국민은 고문을 받지 아니하며, 형사상 자기에게 불리한 진술을 강요당하지 아니한다. 외국인은 국제법과 조약이 정하는 바에 의하여 그 지위가 보장된다.
+<b>
+    <div id="container">
+      <ol class="ma"> 
+      <li><a href="1.html">html</a></li>
+      <li><a href="2.html">css</a></li>
+      <li><a href="3.html">JavaScript</a></li>
+      <li><a href="4.html">Python</a></li>
+      <li><a href="./resoft/index.html">Resoft</a></li>
+      <li><a href="./Elliott Erwitt/index.html">Elliott Erwitt</a></li>
 
-            대통령후보자가 1인일 때에는 그 득표수가 선거권자 총수의 3분의 1 이상이 아니면 대통령으로 당선될 수 없다. 사법권은 법관으로 구성된 법원에 속한다.
-            
-            대통령은 조국의 평화적 통일을 위한 성실한 의무를 진다. 모든 국민은 건강하고 쾌적한 환경에서 생활할 권리를 가지며, 국가와 국민은 환경보전을 위하여 노력하여야 한다.</p>
-        </div>
-    </section>
-</div>
-    <section id="portfolio">
-       <h2>프로젝트 포트폴리오</h2>
+      </ol>
+      <div class ="con">
+      <h2>Welcome!</h2> 
+      &nbsp&nbsp&nbsp&nbspHello <a href="http://info.cern.ch/hypertext/WWW/TheProject.html">WEB</a>
+      </div>
+      </div>
 
-        <h2>자격증 사본</h2>
+    </b>
+    <img src="https://images.unsplash.com/photo-1647836804274-02ec8704e386?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" style="margin-right: 10px"; width="200" height="300
+    " >
+    <img src="https://images.unsplash.com/photo-1504297050568-910d24c426d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxMXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" style="margin-right: 10px"; width="200" height="300
+    " >
+    <img src="KakaoTalk_20220322_152517496.jpg" style="margin-right: 10px"; width="200" height="300
+    " >
+    <img src="https://images.unsplash.com/photo-1647836037780-d4bee2d9d750?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" style="margin-right: 10px"; width="200" height="300
+    " >
+    <img src="https://images.unsplash.com/photo-1647789058440-67de4ca071e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" style="margin-right: 10px"; width="200" height="300
+    " >
+    <img src="https://images.unsplash.com/photo-1647707084966-3b50f3b03d8f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" style="margin-right: 10px"; width="200" height="300
+    " >
+    <img src="https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwyNnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"  width="200" height="300
+    " >
 
-    </section>
 
-    <div id="bottom">
-       <h2>thank you for watching!</h2>
-      <h2> have a good day~!</h2>
-    </div>
-    <script>     
-    $(window).load(function() {
-        $('#load').hide();
-    });
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://daegu-ai-school.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
-        $(document).ready(function(){
-            $('.start-button').click(function() {
-                $('#start').off('scroll touchmove mousewheel');
-                let location = document.querySelector('#resume').offsetTop;
-                $('html,body').animate({scrollTop:location},0);
-            });
-            
-            $('#start').on('scroll touchmove mousewheel', function(event) {
-                event.preventDefault();
-                event.stopPropagation();
-                return false;
-            });
-
-            const fadeOut = 'magictime fadeOut';
-            const fadeIn = 'magictime fadeIn';
-            const slideLeftReturn = 'magictime spaceOutRight';
-            const slideLeft = 'magictime spaceInRight';
-            const more = 'show';
-            const close = 'close2';
-            const menu = '.inside';
-            const back = '.menu_background';
-            $('.menu').click(function() {
-            if($(menu).hasClass(more)){
-                $(menu).addClass(slideLeftReturn);
-                $(back).addClass(fadeOut);
-                 setTimeout(function() { $(menu).addClass(close).removeClass(more); $(back).addClass(close).removeClass(more);}, 500);
-            }
-             else if($(menu).hasClass(close))
-            $(menu).removeClass(slideLeftReturn);
-            $(back).removeClass(fadeOut);
-            $(menu).addClass(slideLeft);
-            $(back).addClass(fadeIn);
-            $(menu).addClass(more).removeClass(close);
-            $(back).addClass(more).removeClass(close);
-
-            $(document).on("click",function(e){
-                if($(".menu").is(e.target)==0){
-                $(menu).removeClass(more).addClass(close);
-                $(back).addClass(close).removeClass(more);
-                }
-            });
-            });
-        });
-    </script>
-</body>
+     </body>
 </html>
